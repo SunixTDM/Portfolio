@@ -66,7 +66,7 @@ export default function Home() {
         </div>
 
         <blockquote className="italic text-xl text-center mb-8">
-          "Passionate about programming with a backend focus"
+          &quot;Passionate about programming with a backend focus&quot;
         </blockquote>
 
         <div className="flex flex-wrap justify-center gap-6">
