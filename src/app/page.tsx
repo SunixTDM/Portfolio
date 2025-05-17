@@ -8,11 +8,15 @@ export default function Home() {
 
       <nav className="flex flex-wrap justify-center gap-6">
         <a href="#back" className="bg-green-500 hover:bg-green-600 transition text-white px-6 py-3 rounded-xl">Back</a>
-        
+
         <a href="#skills" className="bg-cyan-500 hover:bg-cyan-600 transition text-white px-6 py-3 rounded-xl">Habilities</a>
         
         <a href="#about" className="bg-pink-500 hover:bg-pink-600 transition text-white px-6 py-3 rounded-xl">About Me</a>
-  <section
+  
+        <a href="#projects" className="bg-orange-500 hover:bg-orange-600 transition text-white px-6 py-3 rounded-xl">Projects</a>
+      </nav>
+
+<section
   id="about"
   className="min-h-screen flex flex-col items-center justify-center bg-[#0f172a] text-white px-4 py-10"
 >
@@ -62,8 +66,6 @@ export default function Home() {
   </div>
 </section>
 
-        <a href="#projects" className="bg-orange-500 hover:bg-orange-600 transition text-white px-6 py-3 rounded-xl">Projects</a>
-      </nav>
     </main>
   );
 }
