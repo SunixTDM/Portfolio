@@ -46,7 +46,7 @@ export default function Home() {
       {/* Sección About Me */}
       <section
         id="about"
-        className="min-h-screen flex flex-col items-center justify-center bg-[#0f172a] text-white px-4 py-10"
+        className="min-h-screen flex flex-col items-center justify-center bg-[#0f172a] text-white px-4 py-10 w-full"
       >
         <h2 className="text-4xl font-bold border border-white px-4 py-2 mb-8">
           About Me
@@ -60,7 +60,7 @@ export default function Home() {
           <p className="max-w-xl text-center md:text-left text-lg leading-relaxed">
             Hello, my name is <strong>Johnny Alejandro Gálvez Acevedo</strong>. I am
             18 years old and I study Software Engineering at
-            <em> Universidad Cooperativa, Pasto campus</em>. I’m very interested in
+            <em> Universidad Cooperativa, Pasto campus</em>. I&apos;m very interested in
             programming, especially with a focus on <strong>Backend development</strong>.
           </p>
         </div>
@@ -82,7 +82,7 @@ export default function Home() {
       {/* Sección Projects */}
       <section
         id="projects"
-        className="min-h-screen bg-[#1f2937] text-white px-4 py-10 flex flex-col items-center"
+        className="min-h-screen bg-[#1f2937] text-white px-4 py-10 flex flex-col items-center w-full"
       >
         <h2 className="text-4xl font-bold border border-white px-6 py-2 mb-4">
           Projects
@@ -117,7 +117,7 @@ export default function Home() {
       {/* Sección Contact */}
       <section
         id="contact"
-        className="min-h-screen bg-[#111827] text-white px-6 py-12 flex flex-col items-center"
+        className="min-h-screen bg-[#111827] text-white px-6 py-12 flex flex-col items-center w-full"
       >
         <h2 className="text-4xl font-bold border border-white px-6 py-2 mb-4">
           Contact Information
@@ -130,29 +130,39 @@ export default function Home() {
 
         <div className="flex flex-col gap-6 mb-12 text-lg">
           <div className="flex items-center gap-4">
-            <img src="/phone.svg" alt="Phone" className="w-6 h-6" />
+            <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+            </svg>
             <span>+57 313#######</span>
           </div>
           <div className="flex items-center gap-4">
-            <img src="/window.svg" alt="Email" className="w-6 h-6" />
+            <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            </svg>
             <span>johnnygalvez.dev@gmail.com</span>
           </div>
           <div className="flex items-center gap-4">
-            <img src="/globe.svg" alt="GitHub" className="w-6 h-6" />
+            <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+            </svg>
             <a
               href="https://github.com/johnnygalvez"
               className="text-cyan-400 hover:underline"
               target="_blank"
+              rel="noopener noreferrer"
             >
               github.com/johnnygalvez
             </a>
           </div>
           <div className="flex items-center gap-4">
-            <img src="/globe.svg" alt="Twitter" className="w-6 h-6" />
+            <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207" />
+            </svg>
             <a
               href="https://twitter.com/johnnygalvez"
               className="text-blue-400 hover:underline"
               target="_blank"
+              rel="noopener noreferrer"
             >
               @johnnygalvez
             </a>
@@ -172,7 +182,7 @@ export default function Home() {
       {/* Sección Habilities */}
       <section
         id="habilities"
-        className="min-h-screen bg-[#1e293b] text-white px-6 py-12 flex flex-col items-center"
+        className="min-h-screen bg-[#1e293b] text-white px-6 py-12 flex flex-col items-center w-full"
       >
         <h2 className="text-4xl font-bold border border-white px-6 py-2 mb-6">
           Habilities
@@ -180,7 +190,7 @@ export default function Home() {
 
         <p className="text-center max-w-2xl mb-10 text-lg">
           I have various skills in software development, with a stronger focus on
-          backend, but also some knowledge of frontend. I’m capable of contributing
+          backend, but also some knowledge of frontend. I&apos;m capable of contributing
           to large projects and working effectively in a team.
         </p>
 
@@ -206,12 +216,6 @@ export default function Home() {
           </a>
         </div>
       </section>
-    </main>
-  );
-}
-
-
-
     </main>
   );
 }
