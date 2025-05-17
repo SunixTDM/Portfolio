@@ -64,6 +64,55 @@ export default function Home() {
       Contact Information
     </a>
   </div>
+  
+</section>
+
+      <section
+  id="projects"
+  className="min-h-screen bg-[#1f2937] text-white px-4 py-10 flex flex-col items-center"
+>
+  <h2 className="text-4xl font-bold border border-white px-6 py-2 mb-4">
+    Projects
+  </h2>
+
+  <p className="text-center max-w-xl mb-10 text-lg">
+    Here is a collection of my past projects, always aiming to have more:
+  </p>
+
+  {/* Grid de proyectos */}
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+    {[1, 2, 3, 4, 5, 6].map((n) => (
+      <div
+        key={n}
+        className="border-4 border-gray-300 hover:border-cyan-400 transition rounded-lg p-6 text-center bg-gray-800"
+      >
+        <h3 className="text-xl font-semibold text-cyan-300">Project {n}</h3>
+        <p className="text-sm text-gray-300 mt-2">Brief description</p>
+      </div>
+    ))}
+  </div>
+
+  {/* Botones de navegación */}
+  <div className="flex flex-wrap justify-center gap-6">
+    <a
+      href="#"
+      className="bg-green-500 hover:bg-green-600 transition text-white px-6 py-3 rounded-xl"
+    >
+      Back
+    </a>
+    <a
+      href="#about"
+      className="bg-pink-500 hover:bg-pink-600 transition text-white px-6 py-3 rounded-xl"
+    >
+      About Me
+    </a>
+    <a
+      href="#contact"
+      className="bg-blue-500 hover:bg-blue-600 transition text-white px-6 py-3 rounded-xl"
+    >
+      Contact Information
+    </a>
+  </div>
 </section>
 
     </main>
