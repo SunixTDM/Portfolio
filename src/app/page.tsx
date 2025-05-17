@@ -115,6 +115,75 @@ export default function Home() {
   </div>
 </section>
 
+<section
+  id="contact"
+  className="min-h-screen bg-[#111827] text-white px-6 py-12 flex flex-col items-center"
+>
+  <h2 className="text-4xl font-bold border border-white px-6 py-2 mb-4">
+    Contact Information
+  </h2>
+
+  <p className="text-center max-w-2xl mb-10 text-lg">
+    Here is my contact information in case you need my services and knowledge
+    for a project or job:
+  </p>
+
+  {/* Lista de contactos */}
+  <div className="flex flex-col gap-6 mb-12 text-lg">
+    <div className="flex items-center gap-4">
+      <img src="/phone.svg" alt="Phone" className="w-6 h-6" />
+      <span>+57 313#######</span>
+    </div>
+    <div className="flex items-center gap-4">
+      <img src="/window.svg" alt="Email" className="w-6 h-6" />
+      <span>johnnygalvez.dev@gmail.com</span>
+    </div>
+    <div className="flex items-center gap-4">
+      <img src="/globe.svg" alt="GitHub" className="w-6 h-6" />
+      <a
+        href="https://github.com/johnnygalvez"
+        className="text-cyan-400 hover:underline"
+        target="_blank"
+      >
+        github.com/johnnygalvez
+      </a>
+    </div>
+    <div className="flex items-center gap-4">
+      <img src="/globe.svg" alt="Twitter" className="w-6 h-6" />
+      <a
+        href="https://twitter.com/johnnygalvez"
+        className="text-blue-400 hover:underline"
+        target="_blank"
+      >
+        @johnnygalvez
+      </a>
+    </div>
+  </div>
+
+  {/* Navegación */}
+  <div className="flex flex-wrap justify-center gap-6">
+    <a
+      href="#"
+      className="bg-green-500 hover:bg-green-600 transition text-white px-6 py-3 rounded-xl"
+    >
+      Back
+    </a>
+    <a
+      href="#about"
+      className="bg-pink-500 hover:bg-pink-600 transition text-white px-6 py-3 rounded-xl"
+    >
+      About Me
+    </a>
+    <a
+      href="#projects"
+      className="bg-cyan-500 hover:bg-cyan-600 transition text-white px-6 py-3 rounded-xl"
+    >
+      Projects
+    </a>
+  </div>
+</section>
+
+
     </main>
   );
 }
