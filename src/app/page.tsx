@@ -183,6 +183,72 @@ export default function Home() {
   </div>
 </section>
 
+<section
+  id="habilities"
+  className="min-h-screen bg-[#1e293b] text-white px-6 py-12 flex flex-col items-center"
+>
+  <h2 className="text-4xl font-bold border border-white px-6 py-2 mb-6">
+    Habilities
+  </h2>
+
+  <p className="text-center max-w-2xl mb-10 text-lg">
+    I have various skills in software development, with a stronger focus on
+    backend, but also some knowledge of frontend. I’m capable of contributing
+    to large projects and working effectively in a team.
+  </p>
+
+  <h3 className="text-xl mb-4 font-semibold">Experience in:</h3>
+
+  <div className="flex flex-wrap justify-center gap-4 mb-12">
+    {[
+      "Node.js",
+      "PHP",
+      "JavaScript",
+      "Python",
+      "Django",
+      "HTML",
+      "MongoDB",
+      ".NET",
+      "MySQL",
+    ].map((tech) => (
+      <span
+        key={tech}
+        className="bg-cyan-600 text-white px-4 py-2 rounded-xl shadow-md hover:bg-cyan-500 transition"
+      >
+        {tech}
+      </span>
+    ))}
+  </div>
+
+  {/* Navegación */}
+  <div className="flex flex-wrap justify-center gap-6">
+    <a
+      href="#"
+      className="bg-green-500 hover:bg-green-600 transition text-white px-6 py-3 rounded-xl"
+    >
+      Back
+    </a>
+    <a
+      href="#habilities"
+      className="bg-yellow-500 hover:bg-yellow-600 transition text-white px-6 py-3 rounded-xl"
+    >
+      Habilities
+    </a>
+    <a
+      href="#about"
+      className="bg-pink-500 hover:bg-pink-600 transition text-white px-6 py-3 rounded-xl"
+    >
+      About Me
+    </a>
+    <a
+      href="#projects"
+      className="bg-cyan-500 hover:bg-cyan-600 transition text-white px-6 py-3 rounded-xl"
+    >
+      Projects
+    </a>
+  </div>
+</section>
+
 
     </main>
   );
