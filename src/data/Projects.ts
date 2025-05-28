@@ -6,7 +6,7 @@ export const projects = [
     technologies: ['TypeScript', 'Python', 'Tailwind'],
     repo: 'https://github.com/SunixTDM/sistema-pedidos',
     demo: 'https://sistema-pedidos-demo.vercel.app',
-    image: '/images/facturacion.png', // ← imagen que debes tener en public/images/
+    image: '/images/facturacion.png', // asegúrate de que esté exactamente en public/images/
   },
   {
     title: 'Portafolio Personal',
@@ -15,6 +15,6 @@ export const projects = [
     technologies: ['Next.js', 'TypeScript', 'Tailwind'],
     repo: 'https://github.com/SunixTDM/portafolio',
     demo: 'https://portafolio-sunixtdm.vercel.app',
-    image: '/images/portafolio.png',
+    image: '/images/portafolio.png', // asegúrate de que esté en public/images/
   },
 ];
